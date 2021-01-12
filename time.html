@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            Student Name: Konnar Cahill
+            File Name: index.html
+            Date: 11/1/20
+        -->
+
+    <title>All About Video Games: Time Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="pictures/Game.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="pictures/Game.jpg">
+    <link rel="apple-tounch-icon" sizes="180x180" href="pictures/Game.jpg">
+    <link rel="icon" sizes="192x192" href="pictures/Game.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>Time Elasped Claculator</h1>
+
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="RPG.html">RPG</a>
+        <a class="navbar-brand" href="RTS.html">RTS</a>
+        <a class="navbar-brand" href="Sports.html">Sports</a>
+        <a class="navbar-brand" href="History.html">History</a>
+        <a class="navbar-brand" href="MOBA.html">MOBA</a>
+        <a class="navbar-brand" href="time.html">Time</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <style>
+            nav a {
+                padding-right: 5em;
+                padding-left: 3em;
+                font-size: 6em;
+            }
+        </style>
+
+    </nav>
+
+
+
+    <!-- Use the main area to add the main content to the webpage-->
+    <main>
+        <form>
+            
+                <label for="inputDate" class="form-label">Date</label>
+                <input type="date"  id="userInput" accept="date"  >
+                <div id="datehelp" class="form-text">Enter a date</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <p id="Date"></p>
+
+        <script>
+            var date2 = document.getElementById("userInput");
+            today = new Date()
+            past = date2
+            
+
+            function calcDifference(date1, past) {
+                var diff = Math.floor(date1.getTime() - past);
+                var day = 1000 * 60 * 60 * 24;
+
+                var days = Math.floor(diff / day);
+                var months = Math.floor(days / 31);
+                var years = Math.floor(months / 12);
+
+                var message = past;
+                message += " was "
+                message += days + " days "
+                message += months + " months "
+                message += years + " years ago \n"
+
+                return message
+            }
+
+
+
+            Difference = calcDifference(today, past)
+            
+            document.getElementById("Date").innerHTML = Difference;
+        </script>
+
+
+
+
+
+    </main>
+    <footer>
+
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <p> <a href=mailto:KC31@students.ptcollege.edu>KC31@students.ptcollege.edu</a></p>
+
+    </footer>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>

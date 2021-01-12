@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            Student Name: Konnar Cahill
+            File Name: Sports.html
+            Date: 11/1/20
+        -->
+
+    <title> All About Video Games: Sports Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="modernizr.custom.05819.js"></script>
+    <link rel="shortcut icon" href="pictures/Game.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="pictures/Game.jpg">
+    <link rel="apple-tounch-icon" sizes="180x180" href="pictures/Game.jpg">
+    <link rel="icon" sizes="192x192" href="pictures/Game.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1> Sports Games </h1>
+
+
+    </header>
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="RPG.html">RPG</a>
+            <a href="RTS.html">RTS</a>
+            <a href="Sports.html">Sports</a>
+            <a href="History.html">History</a>
+            <a href="MOBA.html">MOBA</a>
+
+        </div>
+        <a class="menu-icon" onclick="hamburger ()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <nav id="as" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="RPG.html">RPG</a>
+        <a class="navbar-brand" href="RTS.html">RTS</a>
+        <a class="navbar-brand" href="Sports.html">Sports</a>
+        <a class="navbar-brand" href="History.html">History</a>
+        <a class="navbar-brand" href="MOBA.html">MOBA</a>
+        <a class="navbar-brand" href="time.html">Time</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <style>
+            nav a {
+                padding-right: 5em;
+                padding-left: 3em;
+                font-size: 6em;
+            }
+            
+            nav a {
+                padding-right: 5em;
+                padding-left: 3em;
+                font-size: 6em;
+            }
+
+            
+            @media only screen and (max-width:767px){
+            .mobile-nav a {
+                color: black;
+                text-align: center;
+                font-size: 2em;
+                text-decoration: none;
+                padding: 3%;
+                display: block;
+            }
+
+            .mobile-nav a.menu-icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .menu-icon div {
+                height: 50px;
+                width: 50px;
+                background-color: #fff;
+            }
+            #as {
+                display: none;
+            }
+        }
+        @media only screen and (min-width:768px){
+            .mobile-nav, .mobile {
+                display: none;
+            }
+        }
+        </style>
+
+
+    </nav>
+
+
+    <!-- Use the main area to add the main content to the webpage-->
+    <main>
+        <figure>
+            <img src=pictures/sports.jpg class=picture alt=video height=250 width=350>
+        </figure>
+        <figcaption>Fig.1 - Examples of sports games. picture from
+            https://athlonsports.com/10-most-influential-sports-video-games-all-time </figcaption>
+        <button onclick="numberGen()">Try it</button>
+        <p id="number"></p>
+        <script>
+            function numberGen() {
+                var x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("number").innerHTML = x;
+            }
+        </script>
+        <p>
+            Sports games are some of the most easily recognizable games on the market today. They are games that attempt
+            to emulate the playing of a “traditional” or “real world” sport like football, basketball, American
+            football, tennis, etc. They may not be readily available on store shelves, but the digital age has breathed
+            life into the sports game genre. There are titles available for fishing, lacrosse, and even cricket that can
+            be purchased on app stores and digital store fronts.
+
+            Sports games come in two main varieties: simulations and arcade sports games. Both of these sub genres are
+            focused on emulating the play experience of “real world” sports. The difference, however, comes in the
+            execution.
+            <a href="https://engagedfamilygaming.com/parent-resources/video-game-definition-week-sports-games/"
+                target="new">Acquired from engagedfamilygaming.com</a>
+
+        </p>
+        <p>
+            The first commercial electronic sports game, as well as the first commercially successful arcade game, was
+            Pong (1972). Produced by the American company Atari Inc., Pong was a simulation of table tennis (Ping-Pong).
+            Since its founding in 1982, the American company Electronic Arts, and in particular EA Sports, has been the
+            premier developer of electronic sports games for personal computers and video game consoles. Among its
+            marquee sports titles were John Madden Football/Madden NFL (1988– ), PGA Tour/Tiger Woods PGA Tour/Rory
+            McIlroy PGA Tour (1990– ), NHL (1991– ), FIFA (1993– ), Bill Walsh College Football/NCAA Football
+            (1993–2013), NBA Live (1994– ), and Triple Play/MVP Baseball (1996–2007).
+            <a href=https://www.britannica.com/topic/electronic-sports-game target="new">Acquired from
+                britannica.com</a>
+        </p>
+
+
+
+    </main>
+    <footer>
+
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <p> <a href=mailto:KC31@students.ptcollege.edu>KC31@students.ptcollege.edu</a></p>
+
+    </footer>
+    <script src="css/script.js"></script>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>

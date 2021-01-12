@@ -1,0 +1,148 @@
+/* style*/
+body, header, nav, main, footer, img, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width:100%;
+    
+}
+
+body {
+    background-color:#000000;
+}
+.mobile-nav, .mobile, #menu-links {
+    display: none;
+}
+
+@media only screen and (min-width:768px){
+    /* Desktop */
+    nav a {
+        font-family: 'Stalinist One', cursive;
+        width: 16.75%;
+        display: inline-block;
+        border:1pt solid #ff0000;
+        border-radius: 20pt;
+        vertical-align: center;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #ff0000;
+        list-style-type: none;
+        font-size: 1.25em;
+    }
+    .mobile-nav, .mobile, #menu-links {
+        display: none;
+    }
+
+    main figcaption {
+        font-size: .75em;
+    }
+    
+    main {
+        
+        font-family: 'Lobster', cursive;
+        font-size: 1.50em;
+        color: #ff0000;
+        background-color: #ffffff;
+        
+    }
+    
+    h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 3em;
+        color: #ff0000;
+        text-align: center;
+    }
+    
+    footer {
+        color: #ff0000;
+        font-size: .75em;
+        vertical-align: middle;
+        text-align: center;
+        
+    }
+    body h3 {
+        text-align: center;
+    }
+    img.picture {
+        float: left;
+    } 
+    
+}    /*  End of 768px   */ 
+
+@media only screen and (max-width:767px){
+/* Phone */
+
+main figcaption {
+    font-size: .75em;
+}
+.as {
+    display: none;
+}
+
+main {
+    
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    color: #ff0000;
+    background-color: #ffffff;
+    
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    color: #ff0000;
+    text-align: center;
+}
+
+footer {
+    color: #ff0000;
+    font-size: .75em;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+body h3 {
+    text-align: center;
+}
+img.picture {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+}
+
+
+
